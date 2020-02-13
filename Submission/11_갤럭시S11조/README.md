@@ -52,8 +52,6 @@ $ git clone https://github.com/Gomyo/TrackMate.git
 ```
 다운로드 이후 프로그램 실행 </br>
  
- 
-
 ### 어플리케이션 개요
 - 참여자들이 베팅한 금액은 Contract Address로 전송된다.
 - Trackmate의 서버는 달리기가 종료되면 참여자들의 주소와 완주한 시간을 Contract로 전송한다.

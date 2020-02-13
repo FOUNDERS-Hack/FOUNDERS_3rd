@@ -131,7 +131,7 @@ FTP
        <td>기획</td>
    </tr>
    <tr>
-       <td></td>
+       <td>정지원</td>
        <td>기획</td>
    </tr>
    </table>

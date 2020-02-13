@@ -44,9 +44,9 @@ Samsung SDK
 1. 폴더의 Trackmate 다운로드 후 실행
 2. git clone의 경우
 ```
-$ git clone https://github.com/FOUNDERS-Hack/FOUNDERS_3rd
+$ git clone https://github.com/Gomyo/TrackMate.git
 ```
-FOUNDERS_3rd > Submission > 11_갤럭시S11조 > Trackmate 실행 </br>
+다운로드 이후 프로그램 실행 </br>
  
  
 

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Profile">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.15" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:gravity="center"
+        android:text="PROFILE"
+        android:textColor="#274C5E"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.8"
+        tools:srcCompat="@tools:sample/avatars[5]" />
+
+    <LinearLayout
+        android:id="@+id/informLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="이름"
+            android:textColor="#868181"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/birthBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="생년월일"
+            android:textColor="#868181"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/genBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="성별"
+            android:textColor="#868181"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/jobBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="소속"
+            android:textColor="#868181"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/bodyBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="신체"
+            android:textColor="#868181"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/etcBox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.15"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="특징"
+            android:textColor="#868181"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:lineSpacingExtra="3sp"
+        android:text="내용을 한번 더 확인하세요\n저장된 정보는 열람, 수정, 삭제가 불가능합니다.\n저장을 진행하시겠습니까?"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_weight="1.1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/correctB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radius"
+            android:text="수정"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8" />
+
+        <Button
+            android:id="@+id/confirmB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radius"
+            android:text="확인"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>

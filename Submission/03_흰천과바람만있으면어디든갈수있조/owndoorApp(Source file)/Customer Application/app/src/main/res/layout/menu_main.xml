@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    android:background="@drawable/ww">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:onClick="reservate"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="숙소 예약하기" />
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="openDoorLock"
+        android:background="@drawable/button_background"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="QR 코드 열기" />
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="a" d="M0 .071h17.896v8.972H0z"/>
+        <path id="c" d="M0 16.357h17.896V.143H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(3 4)">
+        <path fill="#1C38D7" d="M13.974 16.357H3.921c-.59 0-1.071-.48-1.071-1.071V6.244a.5.5 0 1 1 1 0v9.042c0 .038.033.071.071.071h10.053a.073.073 0 0 0 .072-.071V6.244a.5.5 0 1 1 1 0v9.042c0 .59-.48 1.071-1.072 1.071"/>
+        <g transform="translate(0 .072)">
+            <mask id="b" fill="#fff">
+                <use xlink:href="#a"/>
+            </mask>
+            <path fill="#1C38D7" d="M17.395 9.043a.498.498 0 0 1-.343-.137L8.948 1.26.843 8.906a.5.5 0 0 1-.686-.727L8.605.207a.5.5 0 0 1 .686 0L17.74 8.18a.5.5 0 0 1-.344.864" mask="url(#b)"/>
+        </g>
+        <mask id="d" fill="#fff">
+            <use xlink:href="#c"/>
+        </mask>
+        <path fill="#1C38D7" d="M7.755 15.357h2.528v-4.365H7.755v4.365zm3.028 1H7.255a.5.5 0 0 1-.5-.5v-5.365a.5.5 0 0 1 .5-.5h3.528a.5.5 0 0 1 .5.5v5.365a.5.5 0 0 1-.5.5z" mask="url(#d)"/>
+    </g>
+</svg>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyLoveFormActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <TextView
+                    android:id="@+id/row_field_name"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Name : "
+                    android:textSize="18dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/row_data_name"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:hint="ex) 고재웅"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <TextView
+                    android:id="@+id/row_field_today"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Today date : "
+                    android:textSize="18dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/row_data_today"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:hint="ex) 2020.02.13 "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <TextView
+                    android:id="@+id/row_field_favorites"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Favorites : "
+                    android:textSize="16dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/row_data_favorites"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:hint="ex) "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <TextView
+                    android:id="@+id/row_field_photo"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Photo : "
+                    android:textSize="18dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/row_data_photo"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/photo_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textSize="7dp"
+                    android:text="find" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <TextView
+                    android:id="@+id/row_field_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:text="I want to say that..."
+                    android:textSize="18dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            </TableRow>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginLeft="40dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/row_data_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:hint="기록하고 싶은 내용"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textAlignment="center"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:background="#9b92b3"
+        android:textColor="#ffffff"
+        android:text="save" />
+
+
+</LinearLayout>

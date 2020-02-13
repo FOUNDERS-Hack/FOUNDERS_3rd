@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:columnCount="3"
+        android:rowCount="5">
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.1"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Maxwell"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maxwell6"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.2"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Sarah"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sarah"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.3"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Jenny"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jenny"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.4"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Clay"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clay"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.5"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Lisa"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sarah2"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.6"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Hackathon"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/maxwell"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="118dp"
+            android:layout_height="186dp"
+            android:layout_margin="3dp"
+            android:background="#ffd1dc"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="No.7"
+                        android:textAlignment="center"
+                        android:textSize="10dp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:text="Samsung"
+                        android:textAlignment="center"
+                        android:textSize="10dp"></TextView>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="91dp"
+                android:layout_height="56dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/clay6"></ImageView>
+
+            <FrameLayout
+                android:layout_width="102dp"
+                android:layout_height="63dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#F39E9E">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="행복한 얼굴만 보여줘서 너무 고맙습니다. :)"
+                    android:textSize="10dp"></TextView>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <TextView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="80"
+                    android:textSize="10dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </GridLayout>
+</LinearLayout>

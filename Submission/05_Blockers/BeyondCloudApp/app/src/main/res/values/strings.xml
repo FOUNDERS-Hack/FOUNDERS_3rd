@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">BeyondCloud</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Founders</string>
+    <string name="nav_header_subtitle">b_lockers@founders.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Help</string>
+
+    <string name="menu_memories">Beyond Cloud</string>
+    <string name="menu_addBlock">Add Block</string>
+    <string name="menu_findBlock">Find Block</string>
+    <string name="menu_setting">About</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="app_title_1">Keep</string>
+    <string name="app_title_2">your love</string>
+
+    <string name="app_name_1">Go to</string>
+    <string name="app_name_2">Beyond Cloud</string>
+    <string name="subtitle_1">Keep your memory in the very precious block.</string>
+    <string name="subtitle_2">I love you, and that is everything!</string>
+
+    <string name="add_name_1">BLOCKCHAIN</string>
+    <string name="add_name_2">SERVICE</string>
+    <string name="add_subtitle_1">Keep your memory in the very precious block.</string>
+    <string name="add_subtitle_2">I love you, and that is everything!</string>
+
+    <string name="find_name_1">BLOCKCHAIN</string>
+    <string name="find_name_2">SERVICE</string>
+    <string name="find_subtitle_1">Bring your memory from the blockchain.</string>
+    <string name="find_subtitle_2">I love you, and that is everything!</string>
+
+    <string name="loading_caution">블록체인 트랜잭션 조회중입니다. 잠시만 기다려주세요.</string>
+    <string name="menu_find_btn">Find My Records</string>
+
+</resources>

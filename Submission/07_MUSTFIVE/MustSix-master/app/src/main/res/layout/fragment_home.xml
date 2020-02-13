@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--아이디 & 위치 표시-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!--아이디 아이콘-->
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/clay_icon"></ImageView>
+
+                <!--아이디-->
+                <TextView
+                    android:id="@+id/ClayName"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:text="ClayName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:text="Clay"></TextView>
+
+                <!--지도 아이콘-->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_mappointer"></ImageView>
+
+                <!--위치-->
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="경기 남양주"
+                    tools:text="location"></TextView>
+
+            </LinearLayout>
+
+            <!--Clay 사진-->
+            <ImageView
+                android:id="@+id/ClayImage"
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:src="@drawable/clay"></ImageView>
+
+
+            <!--likes 수-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ClayImage"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!--하트 아이콘-->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <!--donater 숫자 문구 표시-->
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:text="18"
+                    tools:text="Donators like num"></TextView>
+
+                <!-- Donator 문구 표시 -->
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Donators"
+                    tools:text="Donators"></TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--블록체인 연결 버튼-->
+                <ImageButton
+                    android:id="@+id/home_donate"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/key"></ImageButton>
+            </LinearLayout>
+
+
+            <!--댓글 예시1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ClayImage"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Chori"
+                    android:textStyle="bold"
+
+                    tools:text="name"></TextView>
+
+                <TextView
+                    android:layout_width="311dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Fucking Adorable!!!!!!"
+                    tools:text="Donator Comment 1"></TextView>
+            </LinearLayout>
+
+            <!--댓글 예시2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ClayImage"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="HyunA"
+                    android:textStyle="bold"
+
+                    tools:text="name"></TextView>
+
+                <TextView
+                    android:layout_width="311dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="ㅠㅠ 맛있는 사료 듬뿍 후원 해 주고 싶다 ㅠㅠ!!!"
+                    tools:text="Donator Comment 2"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="298dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="25 More Replies..."
+                android:textStyle="bold"
+                tools:text="replies"></TextView>
+
+            <!--두번째 강아지-->
+
+            <!--아이디 & 위치 표시-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!--아이디 아이콘-->
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/maxwell_icon"></ImageView>
+
+                <!--아이디-->
+                <TextView
+                    android:id="@+id/SarahName"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:text="SarahName"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    tools:text="Sarah"></TextView>
+
+                <!--지도 아이콘-->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="95dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/bd_mappointer"></ImageView>
+
+                <!--위치-->
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="서울시 도곡동"
+                    tools:text="location"></TextView>
+
+            </LinearLayout>
+
+            <!--Clay 사진-->
+            <ImageView
+                android:id="@+id/SarahImage"
+                android:layout_width="match_parent"
+                android:layout_height="294dp"
+                android:src="@drawable/sarah"></ImageView>
+
+
+            <!--likes 수-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SarahImage"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <!--하트 아이콘-->
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/bd_favorite"></ImageView>
+
+                <!--donater 숫자 문구 표시-->
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="35dp"
+                    android:text="37"
+                    tools:text="Donators like num"></TextView>
+
+                <!-- Donator 문구 표시 -->
+                <TextView
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Donators"
+                    tools:text="Donators"></TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <!--블록체인 연결 버튼-->
+                <ImageButton
+                    android:id="@+id/home_donate2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/key"></ImageButton>
+            </LinearLayout>
+
+
+            <!--댓글 예시1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ClayImage"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Justin"
+                    android:textStyle="bold"
+
+                    tools:text="name"></TextView>
+
+                <TextView
+                    android:layout_width="311dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="흐 미용 받더니 더 귀여워졌네 :)"
+                    tools:text="Donator Comment 3"></TextView>
+            </LinearLayout>
+
+            <!--댓글 예시2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SarahImage"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="HyunA"
+                    android:textStyle="bold"
+
+                    tools:text="name"></TextView>
+
+                <TextView
+                    android:layout_width="311dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="아 진심 졸귀탱"
+                    tools:text="Donator Comment 4"></TextView>
+            </LinearLayout>
+
+            <!--댓글 예시3-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/SarahImage"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Jess"
+                    android:textStyle="bold"
+
+                    tools:text="name"></TextView>
+
+                <TextView
+                    android:layout_width="311dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="맨날 들어와서 구경하는 즁!"
+                    tools:text="Donator Comment 5"></TextView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="298dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:text="10 More Replies..."
+                android:textStyle="bold"
+                tools:text="replies"></TextView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

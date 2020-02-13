@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".Information">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.33" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="272dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.3"
+        android:text="배드 파파/마마 정보"
+        android:textAlignment="textStart"
+        android:textColor="#274C5E"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.33" />
+
+    <LinearLayout
+        android:id="@+id/inform1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/nameLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="left|center_vertical"
+                android:text="이름*"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="#F7F7F7"
+                android:ems="10"
+                android:hint="이름을 입력하세요"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textColor="#4D000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/birthLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/birthBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="left|center_vertical"
+                android:text="생년월일*"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/birthText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="#F7F7F7"
+                android:ems="10"
+                android:hint="생년월일을 입력하세요"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textColor="#4D000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/genderLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/genBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="left|center_vertical"
+                android:text="성별*"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rB1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="남자" />
+
+                <RadioButton
+                    android:id="@+id/rB2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|left|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="여자" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/picLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/picBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:text="사진*"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.33" />
+
+    <LinearLayout
+        android:id="@+id/inform2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/jobLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/jobBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="left|center_vertical"
+                android:text="직장"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/jobText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="#F7F7F7"
+                android:ems="10"
+                android:hint="직장 경력을 입력하세요"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textAlignment="textStart"
+                android:textColor="#4D000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bodyLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bodyBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="left|center_vertical"
+                android:text="신체"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/bodyText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="#F7F7F7"
+                android:ems="10"
+                android:hint="키/몸무게 등 특징을 입력하세요"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textAlignment="textStart"
+                android:textColor="#4D000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/etcLay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_weight="1"
+            android:background="#F7F7F7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/etcBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:gravity="left|center_vertical"
+                android:text="기타"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etcText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="#F7F7F7"
+                android:ems="10"
+                android:hint="이 외의 특이사항을 입력하세요"
+                android:inputType="textPersonName"
+                android:singleLine="false"
+                android:textAlignment="textStart"
+                android:textColor="#4D000000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.33" />
+
+    <TextView
+        android:id="@+id/noticeBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_weight="1.3"
+        android:gravity="left|center_vertical"
+        android:text="*는 필수입력 사항입니다.\n입력하신 정보는 암호로 저장되며, 다른 용도로 사용되지 않습니다."
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/saveB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_weight="1.32"
+        android:background="@drawable/radius"
+        android:text="저장"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+</LinearLayout>

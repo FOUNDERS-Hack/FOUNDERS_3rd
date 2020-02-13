@@ -29,7 +29,7 @@ Notion URL 4: https://www.notion.so/20200212_-e06b035bed82460ba5038d755d2fc636
 
 
 # 구현동영상
-성공영상 링크:https://youtu.be/qv3oOckNZts
+성공영상 링크:https://youtu.be/qv3oOckNZts <br>
 실패영상 링크:https://youtu.be/F_UL0aUDKfs
 
 # UI/UX프로토타이핑

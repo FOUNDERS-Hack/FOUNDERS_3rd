@@ -32,9 +32,17 @@ TrackMate는 블록체인 기반 글로벌 러닝 플랫폼입니다.</br>
 <ol>
     <li>발표자료</li>
     <li>사업계획서</li>
-    <li>[Trackmate] Demo Application (Android Studio File)</li>
+    <li>[Trackmate] Demo Application (Android Studio File)</
     
 </ol>
+</br>
+</br>
+
+> (Remix용) 원하는 값을 전송하기 위한 .sol 파일</br>
+
+|Solidity|TRK_contract,Trackmate|
+|------|---|
+|개요|Smart Contract에 Transaction 전송|
 
 ### 개발 도구
 Android Studio</br>

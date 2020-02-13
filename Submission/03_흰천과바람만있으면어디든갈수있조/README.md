@@ -27,8 +27,11 @@ Notion URL 4: https://www.notion.so/20200212_-e06b035bed82460ba5038d755d2fc636
 
 
 # 구현동영상
-링크:https://www.youtube.com/watch?v=EIaRz-SmIMM&feature=youtu.be
+
+
 # UI/UX프로토타이핑
+
+링크:https://www.youtube.com/watch?v=EIaRz-SmIMM&feature=youtu.be
 
 # 역할분담
 --

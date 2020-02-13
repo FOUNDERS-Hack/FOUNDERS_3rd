@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:background="#606060"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/EventSpace"
+            android:textAlignment="center"
+            android:textSize="35sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:weightSum="2.5"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_account_box_24px"
+            android:layout_weight="1.5"
+            android:scaleType="centerCrop"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:contentDescription="@string/AndroidSide" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:text="@string/nickname"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:weightSum="4">
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/ic_notifications_none_24px"
+            android:textSize="16sp"
+            android:text="@string/Alert"
+            android:textColor="#000000"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:drawableTop="@drawable/ic_place_24px"
+            android:text="@string/whenigo"
+            android:textColor="#000000"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/myReviews"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:drawableTop="@drawable/ic_rate_review_24px"
+            android:text="@string/writeReview" />
+
+        <Button
+            android:id="@+id/manageWallet"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:textColor="#000000"
+            android:drawableTop="@drawable/ic_account_balance_wallet_24px"
+            android:text="@string/manageWallet" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQ"
+            android:background="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            style="?android:attr/buttonBarButtonStyle"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/FAQ"
+            android:background="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#000000"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event"
+            android:background="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifi"
+            android:background="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#000000"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/onevsone"
+            android:background="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#000000"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option"
+            android:background="#FFFFFF"
+            android:paddingTop="5dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="10dp"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:textColor="#000000"
+            />
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="sort_array">
+        <item>찬성률순</item>
+        <item>별점순</item>
+        <item>날짜순</item>
+    </string-array>
+    
+    
+</resources>

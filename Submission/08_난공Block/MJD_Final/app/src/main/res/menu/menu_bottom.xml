@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_map"
+        android:icon="@drawable/ic_map_24px"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/navigation_reviews"
+        android:icon="@drawable/ic_rate_review_24px"
+        android:title="Reviews" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_box_24px"
+        android:title="My Account" />
+
+</menu>

@@ -2,7 +2,12 @@
 
 #### 팀 이름: 갤럭시 s11
 
-#### 팀 구성: 박신언, 최준원, 강인혜, 송준오, 김선우, 구형석  
+
+|기획자|개발자|
+|------|---|
+|강인혜|김선우|
+|박신언|구형석|
+|송준오|최준원|
   
 <hr>
   
@@ -32,7 +37,10 @@ TrackMate는 블록체인 기반 글로벌 러닝 플랫폼입니다.</br>
 <ol>
     <li>발표자료</li>
     <li>사업계획서</li>
-    <li>[Trackmate] Demo Application (Android Studio File)</li>
+    <li>[Trackmate] PoC_Demo Application (Android Studio File)</li>
+    <li>트레일러 영상 [링크]
+    <https://drive.google.com/file/d/1ZhP2OZtC2eb9j9Cr9ppfemvi2acalvJ4/view> 
+    </li>
     <li>(Remix용) 원하는 값을 전송하기 위한 .sol 파일</li>
 </ol>
 

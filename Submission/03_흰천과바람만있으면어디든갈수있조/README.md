@@ -27,7 +27,7 @@ Notion URL 4: https://www.notion.so/20200212_-e06b035bed82460ba5038d755d2fc636
 
 
 # 구현동영상
-
+링크:https://youtu.be/qv3oOckNZts
 
 # UI/UX프로토타이핑
 

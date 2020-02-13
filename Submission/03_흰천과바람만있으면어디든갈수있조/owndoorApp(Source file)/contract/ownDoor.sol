@@ -28,7 +28,7 @@ contract OwnDoor {
         _;
     }
     function openDoor() isBooker(msg.sender) public view returns(bool) {
-        return false;
+        return true;
     }
     
     // CURD booking

@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.customerapplication.presenter.WriteFeedPresenter;
+
 public class MainMenu extends AppCompatActivity {
     static final int GET_STRING =1; //전역변수를 상수화 합니다 GET_STRING =1
     TextView textView;
@@ -29,6 +31,9 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_main);
 
+
+        WriteFeedPresenter.getEthereumAddress();
+        WriteFeedPresenter.makeTrx(WriteFeedPresenter.address); //data 값을 받아서
         textView = findViewById(R.id.textView2);
         button = findViewById(R.id.button2);
 

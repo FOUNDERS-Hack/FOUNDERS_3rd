@@ -3,6 +3,8 @@
 # 프로젝트명: owndoor (블럭체인 기반 스마트 도어락 시스템)
 
 
+<img src="https://user-images.githubusercontent.com/23310187/34244435-91eab306-e668-11e7-8063-735dff683bf8.png" width="90%"></img>
+
 Notion URL 1: https://www.notion.so/93047daf8800464397f69cb7963bca87
 Notion URL 2: https://www.notion.so/3809cf810fc140b1b2c2c1c11ac4576e
 Notion URL 3: https://www.notion.so/20200210_-26df782b1b4f4ed7b0b08d35b8ee4f8c

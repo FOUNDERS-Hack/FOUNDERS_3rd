@@ -27,7 +27,9 @@ Notion URL 4: https://www.notion.so/20200212_-e06b035bed82460ba5038d755d2fc636
 
 
 # 구현동영상
+<iframe width="711" height="643" src="https://www.youtube.com/embed/EIaRz-SmIMM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+# UI/UX프로토타이핑
 
 # 역할분담
 --

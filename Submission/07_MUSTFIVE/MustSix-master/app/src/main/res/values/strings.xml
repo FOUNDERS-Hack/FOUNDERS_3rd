@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mustsix</string>
+    <string name="livefeed">live feed</string>
+    <string name="myhaven">my haven</string>
+    <string name="home">home</string>
+    <string name="mydogs">my dogs</string>
+    <string name="cards">cards</string>
+</resources>

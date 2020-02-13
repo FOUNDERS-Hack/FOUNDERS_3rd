@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/clay_icon"></ImageView>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="Maxwell"
+            tools:text="writer"
+            android:textSize="20dp"></TextView>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/bd_mappointer"></ImageView>
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="경기 남양주"
+            tools:text="location"></TextView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/livefeed_image"
+        android:layout_width="match_parent"
+        android:layout_height="285dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="285dp"
+            android:src="@drawable/livefeed_image"></ImageView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_donate"></ImageView>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:text="20"
+            tools:text="donators watching number"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="Donators Watching"
+            android:textSize="18dp"
+            tools:text="Donators Watching"></TextView>
+
+        <ImageButton
+            android:id="@+id/livefeed_donate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/key"></ImageButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="GGYUE"
+            android:textStyle="bold"
+            tools:text="name"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="내가 후원한 강아쥐~~"
+            tools:text="comments"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="Suyeon"
+            android:textStyle="bold"
+            tools:text="name"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="사료 맛있게 먹으니 안심이 ㅠㅠ"
+            tools:text="comments"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="GGYUE"
+            tools:text="name"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="수연님 잘 지내셨어요~?"
+            tools:text="comments"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="Suyeon"
+            tools:text="name"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="네 뀨님!! 뀨님은여?"
+            tools:text="comments"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="GGYUE"
+            tools:text="name"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="저야 뭐 늘 그렇죠 ^^"
+            tools:text="comments"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/livefeed_image"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:text="Suyeon"
+            tools:text="name"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:text="아 네...^^"
+            tools:text="comments"></TextView>
+    </LinearLayout>
+
+</LinearLayout>

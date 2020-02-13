@@ -19,18 +19,18 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.sql.Timestamp;
 
-public class ApiService  extends AsyncTask<Void, Void, Boolean> {
+public class ApiService  extends AsyncTask<String, Void, Boolean> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
     }
 
     @Override
-    protected Boolean doInBackground(Void... params) {
+    protected Boolean doInBackground(String... params) {
         try {
 
             JSONObject json = new JSONObject();
-            json.put("tx", "0xf86b0a855d21dba00082a02894cb5ff765be4cc90a74063e39a828d7fa3a353bd88087015816111305431ca08b8ccfbad284e4b2034a34b22b55f59e930e1690b022d868a592ce83bae1e1e7a003c5ff10b69ab5e3010a42b5504bb85aa86b41d8327b10b3766aa9f55e7e3876");
+            json.put("tx", params[0]);
 
             String body = json.toString();
             System.out.println(body);

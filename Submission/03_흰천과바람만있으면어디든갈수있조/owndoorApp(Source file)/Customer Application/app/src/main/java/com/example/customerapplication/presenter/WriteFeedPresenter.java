@@ -30,7 +30,7 @@ import static java.util.Collections.singletonList;
 public class WriteFeedPresenter {
     public static String address;
     public static String signedTxHex;
-    public static final String CONTRACT_ADDRESS = "0xbFa162ba4C12a2C4F94ed0e5de3495A9A3aBBCb3";
+    public static final String CONTRACT_ADDRESS = "0x69f08eBAC35013b51F6a572B7852fC0dB57AE6E7";
 
     public static Function createGetPostCountSmartContractCall() {
         return new Function("openDoor"
@@ -55,7 +55,7 @@ public class WriteFeedPresenter {
             Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
 
-            RawTransaction unsignedTransaction = RawTransaction.createTransaction(new BigInteger("10"), Convert.toWei("400", Convert.Unit.GWEI).toBigInteger()
+            RawTransaction unsignedTransaction = RawTransaction.createTransaction(new BigInteger("10"), Convert.toWei("10", Convert.Unit.GWEI).toBigInteger()
                     , new BigInteger("41000"), CONTRACT_ADDRESS, Long.toString(timestamp.getTime()));
 
 

@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (JSONException e) {
                     e.printStackTrace();
-                    Toast.makeText(MainActivity.this, result.getContents(), Toast.LENGTH_LONG).show();
+//                    Toast.makeText(MainActivity.this, result.getContents(), Toast.LENGTH_LONG).show();
                     //address.setText(result.getContents());
 
                     String total =  result.getContents();

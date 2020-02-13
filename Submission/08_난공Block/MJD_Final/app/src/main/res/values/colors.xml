@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#F44336</color>
+    <color name="colorDisable">#8d8d8d</color>
+    <color name="common_bottom_bar_button_ripple_color">#F44336</color>
+    <color name="app_base_color">#FFFFFF</color>
+    <color name="progress_background_color">#33000000</color>
+    <color name="status_bar">#F44336</color>
+    <color name="divider_color">#F44336</color>
+</resources>

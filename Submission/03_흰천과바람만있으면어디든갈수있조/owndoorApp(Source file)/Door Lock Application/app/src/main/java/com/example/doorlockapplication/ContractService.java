@@ -31,7 +31,7 @@ public class ContractService {
     public boolean openDoor(String address, String contractAddress, String data, String signTx) {
         try {
             ApiService apiService = new ApiService();
-            Boolean issueTimeBool = apiService.execute().get();
+            Boolean issueTimeBool = apiService.execute(signTx).get();
             EthCallTask ethCallTask = new EthCallTask();
             Boolean contractBool = ethCallTask.execute(address, contractAddress, data).get();
 
@@ -73,7 +73,13 @@ public class ContractService {
                 List<TypeReference<Type>> outputParameters = func.getOutputParameters();
                 List<Type> types = FunctionReturnDecoder.decode(value, outputParameters);
                 Log.i("Asd", types.get(0).toString());
-                return new Boolean(types.get(0).toString());
+                String temp = types.get(0).getValue().toString();
+                if (types.get(0).getValue().toString().equals("true")) {
+                    return new Boolean(true);
+
+                } else {
+                    return new Boolean(false);
+                }
             } catch (MalformedURLException e) {
                 //
                 e.printStackTrace();
@@ -84,7 +90,7 @@ public class ContractService {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            return null;
+            return false;
         }
     }
 

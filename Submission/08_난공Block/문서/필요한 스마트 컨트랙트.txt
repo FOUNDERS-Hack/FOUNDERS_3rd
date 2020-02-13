@@ -1,0 +1,23 @@
+가게별 (투표할 수 있는 )리뷰 작성하는 스마트 컨트랙트
+
+거래 내역이 생기면 그 가게에 대한 리뷰 권한이 생겨야 함.
+버튼 클릭 -> userId, storeName, bool
+userId와 storeName을 연결해서 권한 넣고 지우고 하면 좋을 듯.
+
+ReviewTest: 0x2146fec6907be71b2bac4d8025eeff1f3054c168
+
+function giveAuth(address _userId, string memory _storeName) public
+
+function getStoreReviewCount(string memory _storeName) public view returns(uint)
+
+function getStoreReview(string memory _storeName, uint _index) public view returns(uint, address, string memory
+    , string memory, string memory, bool, uint, uint, bool)
+
+function getMyReviewCount(address _userId) public view returns (uint)
+
+function getMyReview(address _userId, uint _index) public view returns (uint, address, string memory
+    , string memory, string memory, bool, uint, uint, bool)
+
+function postReview(address _userId, string memory _storeName, string memory _comment, string memory _date) public returns (bool)
+
+function postVote(address _userId, uint _reviewId, bool _approve) public returns (bool)

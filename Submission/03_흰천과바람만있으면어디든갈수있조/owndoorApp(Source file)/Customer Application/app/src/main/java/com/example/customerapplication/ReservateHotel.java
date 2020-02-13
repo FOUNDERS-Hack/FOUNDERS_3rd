@@ -21,7 +21,8 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.FormatterClosedException;
 
-public class ReservateHotel extends AppCompatActivity {
+public class
+ReservateHotel extends AppCompatActivity {
 
 
     Button button;

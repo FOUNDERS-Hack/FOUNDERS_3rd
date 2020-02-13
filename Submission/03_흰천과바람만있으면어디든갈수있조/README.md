@@ -1,4 +1,6 @@
-# packet_sniffer
+# 03_흰천과바람만있으면어디든갈수있조
+
+<h1> asdasd</h1>
 
 기본기능
 --
@@ -107,25 +109,8 @@ FTP
    
 참고자료
 --
-소스코드: <br>
-https://wowcat.tistory.com/161 <br>
-https://www.winpcap.org/docs/docs_412/html/main.html<br>
-https://www.binarytides.com/code-packet-sniffer-c-winpcap/<br>
-https://toughrogrammer.tistory.com/165<br><br>
-FTP: <br>
-https://friedpotatospace.tistory.com/7<br><br>
-Winpcap: <br>
-https://kaspyx.tistory.com/10<br>
-https://kaspyx.tistory.com/14<br><br>
-WireShark: <br>
-https://ko.wikipedia.org/wiki/%EC%99%80%EC%9D%B4%EC%96%B4%EC%83%A4%ED%81%AC<br>
-https://kaspyx.tistory.com/14?category=833244<br><br>
-패킷분석:<br>
-https://kaspyx.tistory.com/14?category=833244<br><br>
-p2p: <br>
-https://mingrammer.com/building-blockchain-in-go-part-7/<br><br>
-포트번호: <br>
+
 https://www.dsun.kr/77<br>
 
-진엽이가썼음ㅎㅎ
+ㅎㅎ
 --

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">수락</string>
+    <string name="start_with_in_app_keystore"><u>In-app keystore</u></string>
+    <string name="start_with_samsung_blockchain_keystore">Samsung Blockchain Keystore</string>
+    <string name="welcome_to_blockchain_comments">Welcome to Founders\nBlockchain Comments</string>
+    <string name="quote_string">\"%s\"</string>
+    <string name="comment_count"><u>%d / 150</u></string>
+</resources>

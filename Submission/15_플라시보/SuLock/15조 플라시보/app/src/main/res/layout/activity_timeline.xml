@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.databinding.ObservableArrayList" />
+
+        <import type="com.android.samsung.codelab.guestbookdapp.model.Feed" />
+
+        <variable
+            name="userInfo"
+            type="com.android.samsung.codelab.guestbookdapp.model.UserInfo" />
+
+        <variable
+            name="feedList"
+            type="ObservableArrayList&lt;Feed&gt;" />
+
+        <variable
+            name="timelinePresenter"
+            type="com.android.samsung.codelab.guestbookdapp.presenter.TimelinePresenter" />
+
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:elevation="0dp"
+                android:theme="@style/ToolBarStyle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="40dp"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar"
+                bind:item="@{feedList}" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:padding="10dp"
+            app:behavior_peekHeight="35dp"
+            app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_insetEdge="bottom">
+
+            <TextView
+                android:id="@+id/title_address"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:fontFamily="@font/merriweather"
+                android:gravity="bottom|start"
+                android:text="#Address"
+                android:textColor="@color/app_base_color"
+                android:textFontWeight="700"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_value_address"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/merriweather"
+                android:gravity="bottom|start"
+                android:text="@{userInfo.address}"
+                android:textColor="@color/app_base_color"
+                android:textFontWeight="300"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/title_address"
+                app:layout_constraintStart_toEndOf="@id/title_address"
+                bind:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/title_seed_hash"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/merriweather"
+                android:gravity="bottom|start"
+                android:text="#SeedHash"
+                android:textColor="@color/app_base_color"
+                android:textFontWeight="700"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_address" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="2dp"
+                android:ellipsize="middle"
+                android:fontFamily="@font/merriweather"
+                android:gravity="bottom|start"
+                android:singleLine="true"
+                android:text="@{userInfo.seedHash}"
+                android:textColor="@color/app_base_color"
+                android:textFontWeight="300"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/title_seed_hash"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/title_seed_hash"
+                bind:ignore="SmallSp" />
+
+            <TextView
+                android:id="@+id/title_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/merriweather"
+                android:gravity="bottom|start"
+                android:text="#Balance"
+                android:textColor="@color/app_base_color"
+                android:textFontWeight="700"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title_seed_hash" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="2dp"
+                android:ellipsize="middle"
+                android:fontFamily="@font/merriweather"
+                android:gravity="bottom|start"
+                android:singleLine="true"
+                android:text="@{userInfo.balance}"
+                android:textColor="@color/app_base_color"
+                android:textFontWeight="300"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/title_balance"
+                app:layout_constraintEnd_toStartOf="@id/btn_refresh_balance"
+                app:layout_constraintStart_toEndOf="@id/title_balance"
+                bind:ignore="SmallSp" />
+
+            <ImageView
+                android:id="@+id/btn_refresh_balance"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:onClick="@{(view)-> timelinePresenter.onClickRefreshBalance()}"
+                android:src="@drawable/ic_refresh_black_24dp"
+                android:tint="@android:color/white"
+                android:tintMode="src_in"
+                app:layout_constraintBottom_toBottomOf="@id/title_balance"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_write_feed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="@{(view)-> timelinePresenter.onClickWriteFeed()}"
+            android:src="@drawable/ic_create_white_24dp"
+            app:fabSize="normal" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

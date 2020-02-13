@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="feed"
+            type="com.android.samsung.codelab.guestbookdapp.model.Feed" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="391dp"
+        android:layout_height="85dp"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txt_user_comment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+            android:text="@{String.format(@string/quote_string, feed.area)}"
+
+
+            android:textColor="@android:color/black"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_user_comment2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_user_comment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+
+
+            android:text="@{String.format(@string/quote_string, feed.bname)}"
+            android:textColor="@android:color/black"
+
+            android:textSize="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_user_comment3"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txt_user_comment1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_user_comment3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+
+
+            android:text="@{String.format(@string/quote_string, feed.ph)}"
+            android:textColor="@android:color/black"
+
+            android:textSize="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_user_comment4"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txt_user_comment2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txt_user_comment4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+
+
+            android:text="@{String.format(@string/quote_string, feed.bod)}"
+            android:textColor="@android:color/black"
+
+            android:textSize="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_user_comment5"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txt_user_comment3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_user_comment5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+
+
+            android:text="@{String.format(@string/quote_string, feed.cod)}"
+            android:textColor="@android:color/black"
+
+            android:textSize="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txt_user_comment6"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/txt_user_comment4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_user_comment6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif"
+
+            android:text="@{String.format(@string/quote_string, feed.toc)}"
+            android:textColor="@android:color/black"
+
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/txt_user_comment5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txt_user_name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/merriweather"-->
+        <!--            android:text="@{feed.name}"-->
+        <!--            android:textFontWeight="400"-->
+        <!--            android:textSize="17sp"-->
+        <!--            android:textStyle="bold" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/txt_date"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/merriweather"-->
+        <!--            android:gravity="bottom|end"-->
+        <!--            android:text="@{feed.date}"-->
+        <!--            android:textFontWeight="300"-->
+        <!--            android:textSize="12sp"-->
+        <!--            android:textStyle="normal"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintRight_toRightOf="parent" />-->
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

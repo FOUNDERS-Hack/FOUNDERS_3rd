@@ -8,7 +8,7 @@ Notion URL 2: https://www.notion.so/3809cf810fc140b1b2c2c1c11ac4576e
 Notion URL 3: https://www.notion.so/20200210_-26df782b1b4f4ed7b0b08d35b8ee4f8c
 Notion URL 4: https://www.notion.so/20200212_-e06b035bed82460ba5038d755d2fc636
 
-기본기능
+# 기본기능
 --
 사용자 어플리케이션측 
 
@@ -29,7 +29,7 @@ Notion URL 4: https://www.notion.so/20200212_-e06b035bed82460ba5038d755d2fc636
 # 구현동영상
 
 
-역할분담
+# 역할분담
 --
 <table>
    <th>이름</th>

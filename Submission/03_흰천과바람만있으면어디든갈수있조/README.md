@@ -26,7 +26,8 @@
 
 기본기능 출력화면
 --
-<h1>사용자 어플리케이션 측 </h1>
+<h1> 사용자 어플리케이션 측 </h1>
+
 ### 기본화면
 <img src="https://user-images.githubusercontent.com/37360089/70724357-ce535600-1d3d-11ea-96c2-1b99771d1988.png"></img>
 
@@ -41,6 +42,7 @@
 
 --
 <h1>스마트 도어락 측 </h1>
+
 ### 기본화면
 <img src="https://user-images.githubusercontent.com/37360089/70724357-ce535600-1d3d-11ea-96c2-1b99771d1988.png"></img>
 

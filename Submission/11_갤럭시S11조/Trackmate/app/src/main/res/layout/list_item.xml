@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/listItemLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/accountNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="14sp"
+        android:paddingTop="12dp"
+        tools:layout_conversion_absoluteHeight="19dp"
+        tools:layout_conversion_absoluteWidth="0dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/accountAddressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingBottom="12dp"
+        tools:layout_conversion_absoluteHeight="35dp"
+        tools:layout_conversion_absoluteWidth="0dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <View
+        android:id="@+id/listItemBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+</LinearLayout>

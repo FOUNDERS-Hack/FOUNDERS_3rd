@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.samsung.open_crypto_wallet_app.Util" />
+
+        <variable
+            name="accountInfo"
+            type="com.samsung.open_crypto_wallet_app.model.AccountModel" />
+
+        <variable
+            name="transactionModel"
+            type="com.samsung.open_crypto_wallet_app.model.TransactionModel" />
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/sendEtherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.SendEtherFragment">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/sendEtherAccountLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/cardsmall"
+            android:elevation="20dp"
+            android:minHeight="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/acountNameImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/accountNameTextView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_button_account" />
+
+            <TextView
+                android:id="@+id/accountNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@{accountInfo.accountName}"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/acountNameImageView"
+                app:layout_constraintEnd_toStartOf="@+id/currentBalanceImageView"
+                app:layout_constraintStart_toEndOf="@+id/acountNameImageView"
+                app:layout_constraintTop_toTopOf="@+id/acountNameImageView"
+                tools:text="Account 1" />
+
+            <TextView
+                android:id="@+id/currentBalanceImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="TRK"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                app:layout_constraintStart_toEndOf="@+id/accountNameTextView"
+                app:layout_constraintBottom_toBottomOf="@+id/currentBalanceTextView"
+                app:layout_constraintEnd_toStartOf="@+id/currentBalanceTextView"
+                app:layout_constraintTop_toTopOf="@+id/currentBalanceTextView"
+                />
+
+            <TextView
+                android:id="@+id/currentBalanceTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@{accountInfo.accountBalance}"
+                android:textColor="#ff3a598f"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="$10" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/sebdEtherTransLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/cardsmall"
+            android:elevation="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/signTransactionButton"
+            app:layout_constraintEnd_toEndOf="@+id/sendEtherAccountLayout"
+            app:layout_constraintHeight_percent=".6"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/sendEtherAccountLayout"
+            app:layout_constraintTop_toBottomOf="@+id/sendEtherAccountLayout">
+
+            <TextView
+                android:id="@+id/sendEtherPublicTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/sender_public_address"
+                android:textColor="#526FCC"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/sendEtherPublicAddTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sendEtherPublicAddTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/card_shadow_sendether"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp"
+                android:text="@{accountInfo.publicAddress}"
+                android:textColor="#61000000"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sendEtherPublicTextView"
+                tools:text="0x99C85bb64564D9eF9A99621301f22C9993Cb89E3" />
+
+            <TextView
+                android:id="@+id/sendEtherReceivTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/receiver_public_address"
+                android:textColor="#526FCC"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sendEtherPublicAddTextView" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/sendEtherTypeAddLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/card_outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sendEtherReceivTextView">
+
+                <TextView
+                    android:id="@+id/gameRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="지역: 대한민국 , 코스: 3Km"
+                    android:textSize="20dp"
+                    android:padding="10dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/etherAmountTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/ether_amount"
+                android:textColor="#526FCC"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sendEtherTypeAddLayout" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/giveEtherAmountLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/card_outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etherAmountTextView">
+
+                <EditText
+                    android:id="@+id/etherAmountEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#ffffff"
+                    android:ems="11"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/transactionSpeedTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/transaction_speed"
+                android:textColor="#526FCC"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/giveEtherAmountLayout" />
+
+            <RadioGroup
+                android:id="@+id/transactionSpeedRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/transactionSpeedTextView">
+
+                <RadioButton
+                    android:id="@+id/transactionSpeedSlow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/send_speed_slow"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/transactionSpeedAverage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/send_speed_average"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/transactionSpeedFast"
+                    android:layout_width="72dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/send_speed_fast"
+                    android:textColor="#ff000000"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </android.support.constraint.ConstraintLayout>
+
+        <!--layout width fill parent ensures that text is not cutoff on screen-->
+
+        <Button
+            android:id="@+id/signTransactionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@{!transactionModel.signed ? @drawable/shape_green_button : @drawable/shape_gray_button}"
+            android:enabled="@{!transactionModel.signed}"
+            android:minWidth="200dp"
+            android:minHeight="45dp"
+            android:text="@string/sign_transaction"
+            android:textColor="#61000000"
+            app:layout_constraintBottom_toTopOf="@+id/sendTransactionButton"
+            app:layout_constraintEnd_toEndOf="@+id/sebdEtherTransLayout"
+            app:layout_constraintStart_toStartOf="@+id/sebdEtherTransLayout" />
+
+        <Button
+            android:id="@+id/sendTransactionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="18dp"
+            android:background="@{transactionModel.signed ? @drawable/shape_green_button : @drawable/shape_gray_button}"
+            android:enabled="@{transactionModel.signed}"
+            android:minWidth="200dp"
+            android:minHeight="45dp"
+            android:text="@string/send_ether"
+            android:textColor="#61000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/signTransactionButton"
+            app:layout_constraintStart_toStartOf="@+id/signTransactionButton" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

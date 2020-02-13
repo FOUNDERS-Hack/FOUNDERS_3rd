@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SettingsFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/keystoreSettingsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/generalSettingsLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/card_outline"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textViewChangePin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/change_keystore_pin"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listItemBar1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/listItemBar1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#CEE7E6E6"
+                app:layout_constraintBottom_toTopOf="@+id/textViewLaunchSBK"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewChangePin" />
+
+            <TextView
+                android:id="@+id/textViewLaunchSBK"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/launch_keystore"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listItemBar2"
+                app:layout_constraintEnd_toEndOf="@+id/textViewChangePin"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textViewChangePin"
+                app:layout_constraintTop_toBottomOf="@+id/listItemBar1" />
+
+            <View
+                android:id="@+id/listItemBar2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#CEE7E6E6"
+                app:layout_constraintBottom_toTopOf="@+id/textViewRevealSeedWords"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewLaunchSBK" />
+
+            <TextView
+                android:id="@+id/textViewRevealSeedWords"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/reveal_seed"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/listItemBar3"
+                app:layout_constraintEnd_toEndOf="@+id/textViewChangePin"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textViewLaunchSBK"
+                app:layout_constraintTop_toBottomOf="@+id/listItemBar2" />
+
+            <View
+                android:id="@+id/listItemBar3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="#CEE7E6E6"
+                app:layout_constraintBottom_toTopOf="@+id/textViewResetWallet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewRevealSeedWords" />
+
+            <TextView
+                android:id="@+id/textViewResetWallet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/reset_wallet"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textViewRevealSeedWords"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/textViewRevealSeedWords"
+                app:layout_constraintTop_toBottomOf="@+id/listItemBar3" />
+
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textViewAPILevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/api_level"
+            android:textColor="#A5A5A5"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/generalSettingsLayout" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/apiLevelLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_outline"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/generalSettingsLayout"
+            app:layout_constraintHeight_percent=".2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/generalSettingsLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAPILevel">
+
+            <TextView
+                android:id="@+id/apiLevelTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="15dp"
+                android:text="@string/api_level"
+                android:textColor="#ff000000"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/apiLevelNumberTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="15dp"
+                android:textColor="#8B8A8A"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/apiLevelTextView"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/apiLevelTextView"
+                app:layout_constraintTop_toBottomOf="@+id/apiLevelTextView"
+                tools:text="123456789123456" />
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textViewNetworks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/networks"
+        android:textColor="#A5A5A5"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/keystoreSettingsLayout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/testNetworkLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/card_outline"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNetworks">
+
+        <RadioGroup
+            android:id="@+id/radioGroupNetwork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/radioButtonRopsten"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/ropsten"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="93dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="432dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonKovan"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/kovan"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="93dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="472dp" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMainNet"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/mainnet"
+                tools:layout_conversion_absoluteHeight="40dp"
+                tools:layout_conversion_absoluteWidth="84dp"
+                tools:layout_editor_absoluteX="46dp"
+                tools:layout_editor_absoluteY="512dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/changeNetworkButton"
+            android:layout_width="102dp"
+            android:layout_height="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/card_outline_ellipse"
+            android:text="@string/network_apply"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/radioGroupNetwork"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupNetwork"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/openSourceButton"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/card_outline"
+        android:text="@string/open_source_licenses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/testNetworkLayout"
+        app:layout_constraintStart_toStartOf="@+id/testNetworkLayout"
+        app:layout_constraintTop_toBottomOf="@+id/testNetworkLayout"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
+

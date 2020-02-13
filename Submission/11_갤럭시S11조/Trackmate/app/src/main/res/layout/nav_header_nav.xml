@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navHeaderNavLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/NavHeaderIconImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:padding="0dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_round"
+        tools:layout_conversion_absoluteHeight="48dp"
+        tools:layout_conversion_absoluteWidth="48dp"
+        tools:layout_conversion_wrapHeight="147"
+        tools:layout_conversion_wrapWidth="178" />
+
+    <ImageButton
+        android:id="@+id/addAccountButton"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/circle"
+        android:onClick="onClickAddAccount"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@+id/NavHeaderIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/NavHeaderIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/NavHeaderIconImageView"
+        app:srcCompat="@drawable/ic_button_account_plus"
+        tools:layout_conversion_absoluteHeight="44dp"
+        tools:layout_conversion_absoluteWidth="44dp"
+        tools:layout_conversion_wrapHeight="95"
+        tools:layout_conversion_wrapWidth="95" />
+
+    <Spinner
+        android:id="@+id/accountChooserSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:popupBackground="@drawable/spinner_popup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NavHeaderIconImageView" />
+
+</android.support.constraint.ConstraintLayout>

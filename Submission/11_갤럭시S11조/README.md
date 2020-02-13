@@ -1,50 +1,59 @@
 # Founders 3기 Hackaton  
 
-#### 팀이름: 갤럭시 s11
+#### 팀 이름: 갤럭시 s11
 
 #### 팀 구성: 박신언, 최준원, 강인혜, 송준오, 김선우, 구형석  
   
 <hr>
   
-## 프로젝트 제목
-운동을 공유하다: TrackMate
+# Trackmate
+<center><img width="300" alt="logo" src="https://user-images.githubusercontent.com/42706347/74458042-74514700-4ecc-11ea-855a-2e169388150a.png"></center>
 
-### 프로젝트에 대한 설명
-TrackMate는 블록체인 기반 글로벌 러닝 플랫폼입니다.  
+</br>
+운동을 공유하다.</br>
+
+TrackMate는 블록체인 기반 글로벌 러닝 플랫폼입니다.</br> 
 러닝을 하고 싶은 유저들을 실시간으로 매칭시켜주고 블록체인 상에 그들의 추억을 영구적으로 보관합니다.  
-  
-'도전 모드'라는 모드를 통해 
-  
-<hr>
-  
-### 파일 정보 및 목록
-1. 발표ppt.pdf  
-2. service_flow.png  
-3. Demo_trackmate
-4. 사업계획서.pdf  
-<hr>
 
-### 개발 환경
-Android Studio  
-Samsung sdk
-  
-### 설치 방법(Installation)
+## 개요
+유저는 Trackmate를 통해 걷기, 달리기, 달리기 경쟁전(개인/팀) 중 원하는 모드를 선택하여 전세계의 사람들과 무작위로 매칭되어 달리는 즐거운 경험을 할 수 있습니다.
 
-### 사용 방법(Usage)
+승패에 상관 없이 완주한 러너들은 같이 달린 사람들과의 기념 사진을 저장할 수 있고, 사진은 블록체인에 저장됩니다. 
+
+한 시즌 동안 좋은 기록을 세운 영광의 러너들 또한 블록체인 상에 랭크가 기록됩니다.
+
+경쟁전을 통해 보다 많은 토큰을 얻을 수도, 잃을 수도 있으며 토큰을 사용해 아바타를 꾸미거나 같이 달리고 싶은 러너와의 매칭을 신청할 수 있습니다. 
+
+지금 바로 세계의 러너들과 함께 달리세요!
 
 <hr>
+  
+### 파일 리스트
+<ol>
+    <li>발표자료</li>
+    <li>사업계획서</li>
+    <li>[Trackmate] Demo Application (Android Studio File)</li>
+    
+</ol>
 
-### 코드의 개요와 구조(service_flow.png 참조)
-1) 참여자들은 베팅한 금액을 contract address로 전송한다.
-2) 참여자들이 clear time(해당 거리를 달린 시간)을 contract에 입력해준다.
-3) contract는 clear time이 가장 짧은 참여자에게 베팅된 토큰을 전송한다.
+### 개발 도구
+Android Studio</br>
+Samsung SDK
+  
+### Application 설치
+1. 폴더의 Trackmate 다운로드 후 실행
+2. git clone의 경우
+```
+$ git clone https://github.com/FOUNDERS-Hack/FOUNDERS_3rd
+```
+FOUNDERS_3rd > Submission > 11_갤럭시S11조 > Trackmate 실행 </br>
+ 
+ 
 
-<hr>
+### 어플리케이션 개요
+- 참여자들이 베팅한 금액은 Contract Address로 전송된다.
+- Trackmate의 서버는 달리기가 종료되면 참여자들의 주소와 완주한 시간을 Contract로 전송한다.
+- Contract는 완주 시간이 가장 짧은 참여자에게 베팅된 토큰을 보상한다.
 
-### 저작권 및 사용권 정보(Copyright)
-
-비상업적으로 공유한다면 별도의 허가는 필요 없고, 출처만 밝히면 됩니다.
-
-### 배포자 및 개발자의 연락처 정보(Contact Information)
-
-구형석, gudtjrdltka@korea.ac.kr
+### Use Case
+![service_flow](https://user-images.githubusercontent.com/42706347/74453416-b9be4600-4ec5-11ea-92b4-a863870cdaee.png)

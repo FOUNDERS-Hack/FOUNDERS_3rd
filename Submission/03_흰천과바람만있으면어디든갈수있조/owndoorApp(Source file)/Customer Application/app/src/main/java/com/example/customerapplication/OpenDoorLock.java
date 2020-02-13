@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OpenDoorLock extends AppCompatActivity {
-    public static final String CONTRACT_ADDRESS = "0x5dFcDc09966250F5ec678d1D28695211CEd672bb";
+    public static final String CONTRACT_ADDRESS = "0xbFa162ba4C12a2C4F94ed0e5de3495A9A3aBBCb3";
     public static String address;
     private IntentIntegrator qrScan;
     private ImageView iv;
@@ -39,7 +39,7 @@ public class OpenDoorLock extends AppCompatActivity {
     TextView textView;
 
     // test
-    private WriteFeedPresenter writeFeedPresenter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +47,7 @@ public class OpenDoorLock extends AppCompatActivity {
         setContentView(R.layout.open_door_lock);
 
 
-       // writeFeedPresenter = new WriteFeedPresenter();
+        // writeFeedPresenter = new WriteFeedPresenter();
         WriteFeedPresenter.getEthereumAddress();;
         text = WriteFeedPresenter.makeTrx(WriteFeedPresenter.address); //data 값을 받아서
 
@@ -55,9 +55,12 @@ public class OpenDoorLock extends AppCompatActivity {
         text += CONTRACT_ADDRESS;  //컨트랙트어드레스
         text += "**";
 
-       // Log.i("www",WriteFeedPresenter.address);
+        // Log.i("www",WriteFeedPresenter.address);
         WriteFeedPresenter.getEthereumAddress();
         text += WriteFeedPresenter.address ;
+        text += "**";
+        WriteFeedPresenter.sign();
+        text += WriteFeedPresenter.signedTxHex;
         iv = (ImageView)findViewById(R.id.qrcode);
         textView =findViewById(R.id.textView);
 

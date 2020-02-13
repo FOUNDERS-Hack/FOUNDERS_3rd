@@ -68,54 +68,72 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject obj = new JSONObject(result.getContents());
 
                     String total =  result.getContents();
-                    String adddress3,contractAddress3,data3;
-                    int fisrted = 0 , seconded =0;
+                    String adddress3,contractAddress3,data3,hex3;
+                    int fisrted = 0 , seconded =0, thired = 0;
 
                     for(int i=0;i<total.length();i++){
-                       if(total.charAt(i)=='*'&& total.charAt(i)=='*' && fisrted == 0){
-                           fisrted = i;
-                       }
-                        else if(total.charAt(i)=='*'&& total.charAt(i)=='*'){
+                        if(total.charAt(i)=='*'&& total.charAt(i)=='*' && fisrted == 0){
+                            fisrted = i;
+                        }
+                        else if(total.charAt(i)=='*'&& total.charAt(i)=='*' && seconded == 0){
                             seconded = i;
-                       }
+                        }
+                        else if(total.charAt(i)=='*'&& total.charAt(i)=='*' && seconded == 0) {
+                            thired = i;
+                        }
                     }
                     data3 = total.substring(0,fisrted);
                     contractAddress3 = total.substring(fisrted+2,seconded);
-                    adddress3 = total.substring(seconded+2);
-
-                  Log.i("good",data3);
-                  Log.i("good",contractAddress3);
-                  Log.i("good",adddress3);
-
-                    ContractService.openDoor(adddress3,contractAddress3,data3);
+                    adddress3 = total.substring(seconded+2,thired);
+                    hex3 = total.substring(thired+2);
+                    Log.i("good",data3);
+                    Log.i("good",contractAddress3);
+                    Log.i("good",adddress3);
+                    Log.i("good",hex3);
+                    ContractService contractService = new ContractService();
+                    if (contractService.openDoor(adddress3,contractAddress3,data3,hex3)) {
+                        Intent in = new Intent(MainActivity.this, success.class);
+                        startActivity(in);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Fail", Toast.LENGTH_LONG).show();
+                    }
 
                 } catch (JSONException e) {
                     e.printStackTrace();
                     Toast.makeText(MainActivity.this, result.getContents(), Toast.LENGTH_LONG).show();
                     //address.setText(result.getContents());
 
-
                     String total =  result.getContents();
-                    String adddress3,contractAddress3,data3;
-                    int fisrted = 0 , seconded =0;
+                    String adddress3,contractAddress3,data3,hex3;
+                    int fisrted = 0 , seconded =0, thired = 0;
 
                     for(int i=0;i<total.length();i++){
                         if(total.charAt(i)=='*'&& total.charAt(i+1)=='*' && fisrted == 0){
                             fisrted = i;
                         }
-                        else if(total.charAt(i)=='*'&& total.charAt(i+1)=='*'){
+                        else if(total.charAt(i)=='*'&& total.charAt(i+1)=='*' && seconded == 0){
                             seconded = i;
+                        }
+                        else if(total.charAt(i)=='*'&& total.charAt(i+1)=='*' && thired == 0) {
+                            thired = i;
                         }
                     }
                     data3 = total.substring(0,fisrted);
                     contractAddress3 = total.substring(fisrted+2,seconded);
-                    adddress3 = total.substring(seconded+2);
+                    adddress3 = total.substring(seconded+2,thired);
+                    hex3 = total.substring(thired+2);
 
                     Log.i("good",data3);
                     Log.i("good",contractAddress3);
                     Log.i("good",adddress3);
-
-                    ContractService.openDoor(adddress3,contractAddress3,data3);
+                    Log.i("good",hex3);
+                    ContractService contractService = new ContractService();
+                    if (contractService.openDoor(adddress3,contractAddress3,data3,hex3)) {
+                        Intent in = new Intent(MainActivity.this, success.class);
+                        startActivity(in);
+                    } else {
+                        Toast.makeText(MainActivity.this, "Fail", Toast.LENGTH_LONG).show();
+                    }
                 }
             }
 

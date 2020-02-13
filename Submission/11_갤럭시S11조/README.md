@@ -33,6 +33,7 @@ Samsung sdk
 ### 사용 방법(Usage)
 
 <hr>
+
 ### 코드의 개요와 구조(service_flow.png 참조)
 1) 참여자들은 베팅한 금액을 contract address로 전송한다.
 2) 참여자들이 clear time(해당 거리를 달린 시간)을 contract에 입력해준다.

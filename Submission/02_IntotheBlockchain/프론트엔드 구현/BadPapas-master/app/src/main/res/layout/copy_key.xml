@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/lock_icon"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="27dp"
+        android:text="LOCK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#274C5E"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="270dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center_horizontal"
+        android:text="정보가 안전하게 저장되었습니다\n발급된 KEY를 반드시 보관해주세요"
+        android:textColor="#274C5E"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/show_hash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    //해시키는 보아라
+
+    <TextView
+        android:id="@+id/show_hash"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="280dp"
+        android:text="privateKey"
+        android:textAlignment="textStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.282"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/copy_btn"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="276dp"
+        android:text="복사하기"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/show_hash" />
+
+    <Button
+        android:id="@+id/closeB"
+        android:layout_width="69dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/radius"
+        android:text="닫기"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

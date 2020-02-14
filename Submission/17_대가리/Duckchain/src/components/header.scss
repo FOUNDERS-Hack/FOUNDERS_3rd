@@ -1,0 +1,37 @@
+@media (min-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    
+        .full-width-view {
+            width: 100%;
+            height: 76px;
+            // background-color: green;
+            
+            .header-inner-area {
+                width: 90%;
+                height: 76px;
+                // background-color: red;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            
+                div {
+                    width: 400px;
+                    display: flex;
+                    justify-content: space-between;
+                    a {
+                        line-height: 76px;
+                        vertical-align: middle;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:320px) AND (max-width: 767px){
+    
+}

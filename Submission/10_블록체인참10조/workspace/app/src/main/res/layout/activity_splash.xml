@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:gravity="center"
+        android:background="@drawable/image_background"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WARNING"
+            android:textColor="@android:color/holo_red_dark"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앱 내 기록물은 모두가 볼 수 있는 공유물이므로"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="향후 저작권에 대한 주장이\n불가합니다"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

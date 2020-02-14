@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="left"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewParentTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:text="블록체인10조가 만들어졌다. \n우리는 프로젝트를 만들고 있다. \n 화이팅!!" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!--                        <TextView-->
+                        <!--                            android:id="@+id/button"-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="150dp"-->
+                        <!--                            android:layout_gravity="bottom"-->
+                        <!--                            android:layout_weight="1"-->
+                        <!--                            android:backgroundTint="#CDDC39"-->
+
+                        <!--                            android:text="우리는 개발자와 기획자로 이루어져있다."-->
+                        <!--                            android:visibility="visible" />-->
+                        <TextView
+                            android:id="@+id/textViewLeftChild"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:backgroundTint="@color/colorAccent"
+
+                            android:text="우리는 개발자와 기획자로 이루어져있다."
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textViewRightChild"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/editTextFilling"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:backgroundTint="#FEC141"
+                    android:gravity="center"
+                    android:hint="여기에 이야기를 써주세요." />
+
+                <Button
+                    android:id="@+id/bottom_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="82dp"
+                    android:gravity="center_horizontal"
+
+                    android:text="제출하기" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

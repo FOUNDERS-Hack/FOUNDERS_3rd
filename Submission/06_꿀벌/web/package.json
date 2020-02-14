@@ -1,0 +1,27 @@
+{
+  "name": "sperm_bank",
+  "version": "1.0.0",
+  "description": "FOUNDERS 3rd Group_6 hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnflwlq3231/FOUNDERS_3th_Group-6.git"
+  },
+  "author": "FOUNDERS 3rd Group_6",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dnflwlq3231/FOUNDERS_3th_Group-6/issues"
+  },
+  "homepage": "https://github.com/dnflwlq3231/FOUNDERS_3th_Group-6#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jquery": "^3.4.1",
+    "path": "^0.12.7",
+    "web3": "^1.2.6"
+  }
+}

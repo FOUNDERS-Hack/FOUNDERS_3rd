@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#272E37"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/sendsmartcontract"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/draw"
+        android:backgroundTint="#272E37"
+
+        android:shadowColor="#313435"
+        android:text="CHECK\tMY\tGAGE"
+        android:textColor="@color/bg_color_secondary" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/generateaccounts"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/draw"
+        android:backgroundTint="#272E37"
+        android:text="MY\tACCOUNT"
+        android:textColor="@color/bg_color_secondary" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/getaccounts"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/draw"
+        android:backgroundTint="#272E37"
+        android:text="LOCATION\tIMFORMATION"
+        android:textColor="@color/bg_color_secondary" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:text="Button" />
+
+
+    <Button
+        android:id="@+id/paymentsheet"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/draw"
+        android:backgroundTint="#272E37"
+        android:baselineAligned="false"
+        android:text="PAYMENT"
+        android:textColor="@color/bg_color_secondary" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/draw"
+        android:backgroundTint="#272E37"
+        android:text="CONNECT"
+        android:textColor="@color/bg_color_secondary"
+        android:textColorHint="@color/bg_color_secondary" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/webviewinit"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@drawable/draw"
+        android:backgroundTint="#272E37"
+        android:text="webview"
+        android:textColor="@color/bg_color_secondary" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:text="Button" />
+
+    <com.samsung.android.sdk.blockchain.ui.CucumberWebView
+        android:id="@+id/cucumberWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.samsung.android.sdk.blockchain.ui.CucumberWebView>
+
+</LinearLayout>

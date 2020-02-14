@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:color="#9aa1ab"
+    tools:targetApi="28">
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#9aa1ab" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/rectangle_span_item"></item>
+</ripple>

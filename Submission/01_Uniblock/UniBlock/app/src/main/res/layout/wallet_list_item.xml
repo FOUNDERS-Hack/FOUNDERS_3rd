@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/setup_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/wallet_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/outline_ellipse_product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/wallet_item_image_view"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/samsung_blockchain_keystore" />
+
+        <TextView
+            android:id="@+id/wallet_item_title"
+            style="@style/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/wallet_item_image_view"
+            app:layout_constraintStart_toEndOf="@+id/wallet_item_image_view"
+            app:layout_constraintTop_toTopOf="@+id/wallet_item_image_view"
+            tools:text="Hardware Wallet" />
+
+        <ImageButton
+            android:id="@+id/select_button"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@drawable/outline_semi_ellipse"
+            android:src="@drawable/ic_icon_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/wallet_item_layout"
+            app:layout_constraintEnd_toEndOf="@+id/wallet_item_layout"
+            app:layout_constraintTop_toTopOf="@+id/wallet_item_layout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

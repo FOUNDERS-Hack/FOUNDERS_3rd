@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="accountInformationViewModel"
+            type="com.samsung.uni_block_app.viewmodel.AccountInformationViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background"
+        tools:context=".view.DashboardFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/dashboard_balance_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/outline_ellipse_white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:translationY="@dimen/negative_overlap_margin"
+            app:layout_constraintBottom_toTopOf="@+id/public_address_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/qr_code_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="QR Code"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/qr_code_imageview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/qr_code_instructions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qr_code_label"
+                app:srcCompat="@color/white"
+                tools:layout_height="150dp"
+                tools:layout_width="150dp" />
+
+            <TextView
+                android:id="@+id/qr_code_instructions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="Sender can scan this QR code or use the public address below"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/qr_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Q.R."
+                android:visibility="visible"
+                android:textSize="100dp"
+                android:textColor="#10000000"
+                app:layout_constraintBottom_toTopOf="@+id/qr_code_instructions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qr_code_label" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/public_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Public Address"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/public_address_textview"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_balance_layout"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_balance_layout" />
+
+        <TextView
+            android:id="@+id/public_address_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:text="@{accountInformationViewModel.selectedAccount.address}"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/copy_button"
+            app:layout_constraintEnd_toEndOf="@+id/dashboard_balance_layout"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/dashboard_balance_layout"
+            tools:text="0x99C85bb64564D9eF9A99621301f22C9993Cb89E3" />
+
+        <Button
+            android:id="@+id/copy_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginBottom="24dp"
+            android:background="@color/text_color_balance"
+            android:drawableLeft="@drawable/ic_button_copy"
+            android:paddingLeft="10dp"
+            android:text="Copy"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/share_button"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/share_button"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:background="@color/text_color_balance"
+            android:drawableLeft="@drawable/ic_button_share"
+            android:paddingLeft="10dp"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/copy_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/copy_button"
+            app:layout_constraintTop_toTopOf="@+id/copy_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

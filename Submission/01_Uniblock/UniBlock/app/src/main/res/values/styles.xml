@@ -1,0 +1,82 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@android:color/tab_indicator_text</item>
+        <item name="android:actionOverflowButtonStyle">@style/actionOverFlow</item>
+    </style>
+
+    <style name="actionOverFlow">
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/ic_icon_dot</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="wallet_list_title">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontWeight">30</item>
+    </style>
+
+    <style name="product_list_title">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="product_name">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="product_details">
+        <item name="android:textColor">#ff757575</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="product_price">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="senders_token">
+        <item name="android:textColor">#ff353536</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="token_sub_title">
+        <item name="android:textColor">#99000000</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="token_info">
+        <item name="android:textColor">#99000000</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="senders_title">
+        <item name="android:textColor">#ff353536</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="radio_group">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+</resources>

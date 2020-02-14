@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/default_account_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/outline_circle_white"
+            android:contentDescription="@string/account_icon_description"
+            app:layout_constraintEnd_toStartOf="@+id/account_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_button_account" />
+
+        <TextView
+            android:id="@+id/account_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/account"
+            android:textColor="#ff000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/default_account_imageView"
+            app:layout_constraintStart_toEndOf="@+id/default_account_imageView"
+            app:layout_constraintTop_toTopOf="@+id/default_account_imageView"
+            app:layout_constraintVertical_bias="0.120000005" />
+
+        <TextView
+            android:id="@+id/spinner_item_hdpath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_item_public_address"
+            app:layout_constraintEnd_toEndOf="@+id/account_label"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/account_label"
+            app:layout_constraintTop_toBottomOf="@+id/account_label"
+            tools:text="m'/44'/60'/0'/0" />
+
+        <TextView
+            android:id="@+id/spinner_item_public_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/spinner_item_hdpath"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_item_hdpath"
+            tools:text="0x5630125217a06e60531e9a6aCc6ad00771232C84" />
+
+        <Button
+            android:id="@+id/add_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/outline_ellipse"
+            android:onClick="onClickAddNewAccount"
+            android:text="@string/add_new_account"
+            android:textAllCaps="false"
+            android:textColor="#ffba643e"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/spinner_item_public_address"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_item_public_address" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/add_account_button"
+            app:srcCompat="@drawable/grey_line" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

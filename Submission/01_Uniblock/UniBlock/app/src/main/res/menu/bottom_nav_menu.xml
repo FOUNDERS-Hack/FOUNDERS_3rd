@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Account" />
+
+    <item
+        android:id="@+id/navigation_marketplace"
+        android:icon="@drawable/ic_marketplace_black_24dp"
+        android:title="Auction" />
+
+    <item
+        android:id="@+id/navigation_dapp"
+        android:icon="@drawable/ic_dapp"
+        android:title="@string/title_web_dapp" />
+
+    <item
+        android:id="@+id/navigation_transfer"
+        android:icon="@drawable/ic_transfer_black_24dp"
+        android:title="@string/title_transfer" />
+
+    <item
+        android:id="@+id/navigation_token"
+        android:icon="@drawable/ic_token_black_24dp"
+        android:title="@string/title_token" />
+
+</menu>

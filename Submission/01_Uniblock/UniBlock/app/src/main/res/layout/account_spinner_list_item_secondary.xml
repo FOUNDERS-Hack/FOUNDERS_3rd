@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/others_account_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/outline_circle_white"
+        android:contentDescription="@string/account_icon_description"
+        app:layout_constraintEnd_toStartOf="@+id/account_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_button_account_others" />
+
+    <TextView
+        android:id="@+id/account_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/account"
+        android:textColor="#ff000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/others_account_imageView"
+        app:layout_constraintStart_toEndOf="@+id/others_account_imageView"
+        app:layout_constraintTop_toTopOf="@+id/others_account_imageView"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/spinner_item_hdpath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/account_label"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/account_label"
+        app:layout_constraintTop_toBottomOf="@+id/account_label"
+        tools:text="m'/44'/60'/0'/0" />
+
+    <TextView
+        android:id="@+id/spinner_item_public_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="#ff000000"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinner_item_hdpath"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_item_hdpath"
+        tools:text="0x5630125217a06e60531e9a6aCc6ad00771232C84" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

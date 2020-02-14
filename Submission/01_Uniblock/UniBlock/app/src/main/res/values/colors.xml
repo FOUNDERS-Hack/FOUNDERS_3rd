@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#ffd97d54</color>
+    <color name="welcomePageBackground">#ff334856</color>
+    <color name="white">#fff</color>
+    <color name="orangePrimary">#ffd97d54</color>
+    <color name="fragment_background">#fff0f3f4</color>
+    <color name="list_wallet">#dee3de</color>
+    <color name="setup_background">#f3f3f3</color>
+    <color name="progressbar_background">#80000000</color>
+</resources>

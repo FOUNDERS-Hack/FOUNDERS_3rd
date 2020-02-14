@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+
+        <shape android:shape="rectangle">
+
+            <corners android:radius="15dp" />
+
+            <solid android:color="#ffffffff" />
+
+            <item android:shadowColor="#33000000"></item>
+
+            <!-- TextView shadow offsets do not respect scale. -->
+
+            <item android:shadowDx="0"></item>
+
+            <item android:shadowDy="1"></item>
+
+        </shape>
+
+    </item>
+</selector>

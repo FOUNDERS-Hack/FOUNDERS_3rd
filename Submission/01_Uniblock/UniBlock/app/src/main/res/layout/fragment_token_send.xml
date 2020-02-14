@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="accountInformationViewModel"
+            type="com.samsung.uni_block_app.viewmodel.AccountInformationViewModel" />
+
+        <variable
+            name="tokenViewModel"
+            type="com.samsung.uni_block_app.viewmodel.TokenViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background"
+        android:clipChildren="false"
+        tools:context=".view.SendTokenFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/send_token_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/outline_ellipse_white"
+            android:translationY="@dimen/negative_overlap_margin"
+            app:layout_constraintBottom_toTopOf="@+id/send_token_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/sender_address_label"
+                style="@style/senders_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/sender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sender_public_address_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:text="@{accountInformationViewModel.selectedAccount.address}"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sender_address_label"
+                tools:text="0x99C85bb64564D9eF9A99621301f22C9993Cb89E3" />
+
+            <Spinner
+                android:id="@+id/token_list_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toStartOf="@+id/add_token_image_button"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sender_public_address_textView" />
+
+            <TextView
+                android:id="@+id/token_symbol_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/token_symbol"
+                app:layout_constraintBottom_toTopOf="@+id/token_name_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/token_list_spinner" />
+
+            <TextView
+                android:id="@+id/token_symbol"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:text="@{tokenViewModel.tokenInfo.symbol}"
+                app:layout_constraintBottom_toTopOf="@+id/token_name"
+                app:layout_constraintStart_toEndOf="@+id/token_symbol_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_list_spinner"
+                tools:text="UBER" />
+
+            <TextView
+                android:id="@+id/token_name_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/token_name"
+                app:layout_constraintBottom_toTopOf="@+id/token_decimal_label"
+                app:layout_constraintEnd_toEndOf="@+id/token_symbol_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_symbol_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_symbol_label" />
+
+            <TextView
+                android:id="@+id/token_name"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{tokenViewModel.tokenInfo.name}"
+                app:layout_constraintBottom_toTopOf="@+id/token_decimal"
+                app:layout_constraintEnd_toEndOf="@+id/token_symbol"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_symbol"
+                app:layout_constraintTop_toBottomOf="@+id/token_symbol"
+                tools:text="UBER BD" />
+
+            <TextView
+                android:id="@+id/token_decimal_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/token_decimal"
+                app:layout_constraintBottom_toTopOf="@+id/balance_label"
+                app:layout_constraintEnd_toEndOf="@+id/token_name_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_name_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_name_label" />
+
+            <TextView
+                android:id="@+id/token_decimal"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{String.valueOf(tokenViewModel.tokenInfo.decimals)}"
+                app:layout_constraintBottom_toTopOf="@+id/token_balance"
+                app:layout_constraintEnd_toEndOf="@+id/token_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_name"
+                app:layout_constraintTop_toBottomOf="@+id/token_name"
+                tools:text="18" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/receiver_address_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/card_outline"
+                app:layout_constraintBottom_toTopOf="@+id/receiver_address_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/receiver_address_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/scan_receiver_address_qr_code_button"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageButton
+                    android:id="@+id/scan_receiver_address_qr_code_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/outline_circle_white"
+                    android:src="@drawable/ic_qrcode"
+                    app:layout_constraintBottom_toBottomOf="@+id/receiver_address_edit_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/receiver_address_edit_text" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/token_amount_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/card_outline"
+                app:layout_constraintBottom_toTopOf="@+id/token_amount_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/token_amount_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:ems="9"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/receiver_address_label"
+                style="@style/token_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="14dp"
+                android:text="@string/receiver_address"
+                app:layout_constraintBottom_toTopOf="@+id/token_amount_layout"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/token_amount_label"
+                style="@style/token_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/token_amount"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/token_information_progressbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:indeterminateTint="@color/text_color_balance"
+                android:visibility="@{safeUnbox(tokenViewModel.tokenInformationIsLoading) ? View.VISIBLE : View.GONE}"
+                app:layout_constraintBottom_toBottomOf="@+id/token_decimal_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/token_symbol"
+                app:layout_constraintTop_toTopOf="@+id/token_symbol_label"
+                tools:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/add_token_image_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/outline_circle_white"
+                android:backgroundTint="@color/list_wallet"
+                android:clickable="@{!safeUnbox(tokenViewModel.tokenInformationIsLoading)}"
+                app:layout_constraintBottom_toBottomOf="@+id/token_list_spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/token_list_spinner"
+                app:srcCompat="@drawable/ic_icon_plus" />
+
+            <TextView
+                android:id="@+id/balance_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/balance"
+                app:layout_constraintBottom_toTopOf="@+id/receiver_address_layout"
+                app:layout_constraintEnd_toEndOf="@+id/token_decimal_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_decimal_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_decimal_label" />
+
+            <TextView
+                android:id="@+id/token_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@{tokenViewModel.tokenBalance}"
+                app:layout_constraintBottom_toTopOf="@+id/receiver_address_layout"
+                app:layout_constraintEnd_toEndOf="@+id/token_decimal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_decimal"
+                app:layout_constraintTop_toBottomOf="@+id/token_decimal"
+                tools:text="15.23" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/send_token_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/text_color_balance"
+            android:backgroundTint="@{safeUnbox(tokenViewModel.tokenInformationIsLoading) ? @android:color/darker_gray : @color/text_color_balance}"
+            android:clickable="@{!safeUnbox(tokenViewModel.tokenInformationIsLoading)}"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/send_token"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/send_token_layout"
+            app:layout_constraintStart_toStartOf="@+id/send_token_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

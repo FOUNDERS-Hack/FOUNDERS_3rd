@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/outline_ellipse_product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/product_details_textView"
+            style="@style/product_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/product_price_textView"
+            app:layout_constraintEnd_toStartOf="@+id/product_purchase_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/product_image_button"
+            app:layout_constraintTop_toBottomOf="@+id/product_name_textView"
+            tool:text="Greyhound divisively hello coldly wonderfully" />
+
+        <TextView
+            android:id="@+id/product_name_textView"
+            style="@style/product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/product_image_button"
+            app:layout_constraintTop_toTopOf="parent"
+            tool:text="Product Name" />
+
+        <TextView
+            android:id="@+id/product_price_textView"
+            style="@style/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/text_font"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/product_image_button"
+            tool:text="0.01"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/coin_name"
+            style="@style/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="ETH"
+            app:layout_constraintBottom_toBottomOf="@+id/product_price_textView"
+            app:layout_constraintStart_toEndOf="@+id/product_price_textView"
+            app:layout_constraintTop_toTopOf="@+id/product_price_textView"
+            app:layout_constraintVertical_bias="0.0"
+            android:visibility="invisible"/>
+
+        <ImageButton
+            android:id="@+id/product_image_button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/outline_ellipse_white"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/note10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/product_purchase_button"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:background="@color/text_color_balance"
+            android:src="@drawable/product_purches_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

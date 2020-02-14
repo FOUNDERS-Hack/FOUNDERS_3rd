@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="tokenViewModel"
+            type="com.samsung.uni_block_app.viewmodel.TokenViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fragment_background"
+        android:clipChildren="false"
+        tools:context=".view.SendTokenFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/add_token_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/outline_ellipse_white"
+            android:translationY="@dimen/negative_overlap_margin"
+            app:layout_constraintBottom_toTopOf="@+id/add_token_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/add_token_label"
+                style="@style/senders_token"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/token_add_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/token_address_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/card_outline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/add_token_label">
+
+                <EditText
+                    android:id="@+id/token_address_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:textSize="16sp"
+                    android:background="#ffffff"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/scan_token_address_qr_code_button"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ImageButton
+                    android:id="@+id/scan_token_address_qr_code_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/outline_circle_white"
+                    android:src="@drawable/ic_qrcode"
+                    app:layout_constraintBottom_toBottomOf="@+id/token_address_edit_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/token_address_edit_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/token_address_label"
+                style="style/token_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/token_address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/token_address_layout" />
+
+            <TextView
+                android:id="@+id/token_symbol_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/token_symbol"
+                app:layout_constraintBottom_toTopOf="@+id/token_name_label"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/token_address_label" />
+
+            <TextView
+                android:id="@+id/token_symbol"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:text="@{tokenViewModel.tokenInfo.symbol}"
+                app:layout_constraintBottom_toTopOf="@+id/token_name"
+                app:layout_constraintStart_toEndOf="@+id/token_symbol_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_address_label"
+                tools:text="UBER" />
+
+            <TextView
+                android:id="@+id/token_name_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/token_name"
+                app:layout_constraintBottom_toTopOf="@+id/token_decimal_label"
+                app:layout_constraintEnd_toEndOf="@+id/token_symbol_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_symbol_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_symbol_label" />
+
+            <TextView
+                android:id="@+id/token_name"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{tokenViewModel.tokenInfo.name}"
+                app:layout_constraintBottom_toTopOf="@+id/token_decimal"
+                app:layout_constraintEnd_toEndOf="@+id/token_symbol"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_symbol"
+                app:layout_constraintTop_toBottomOf="@+id/token_symbol"
+                tools:text="UBER BD" />
+
+            <TextView
+                android:id="@+id/token_decimal_label"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="@string/token_decimal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/token_name_label"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_name_label"
+                app:layout_constraintTop_toBottomOf="@+id/token_name_label" />
+
+            <TextView
+                android:id="@+id/token_decimal"
+                style="@style/token_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="@{String.valueOf(tokenViewModel.tokenInfo.decimals)}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/token_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/token_name"
+                app:layout_constraintTop_toBottomOf="@+id/token_name"
+                tools:text="18" />
+
+            <ProgressBar
+                android:id="@+id/token_information_progressbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="8dp"
+                android:indeterminateTint="@color/text_color_balance"
+                android:visibility="@{safeUnbox(tokenViewModel.tokenInformationIsLoading) ? View.VISIBLE : View.GONE}"
+                app:layout_constraintBottom_toBottomOf="@+id/token_decimal_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/token_symbol"
+                app:layout_constraintTop_toTopOf="@+id/token_symbol_label"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/add_token_button"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/text_color_balance"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/add_token"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/add_token_layout"
+            app:layout_constraintStart_toStartOf="@+id/add_token_layout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

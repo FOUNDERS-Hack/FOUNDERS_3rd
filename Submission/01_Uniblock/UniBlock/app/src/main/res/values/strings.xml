@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Uni Block</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_mobile_dapp">Mobi DApp</string>
+    <string name="title_web_dapp">Web DApp</string>
+    <string name="product_page_title">List of products</string>
+    <string name="title_transfer">Transfer</string>
+    <string name="title_token">Token</string>
+    <string name="account">Account</string>
+    <string name="account_icon_description">Image of Account Icon</string>
+    <string name="add_new_account">Add New</string>
+    <string name="balance">Balance</string>
+    <string name="ethereum_symbol">ETH</string>
+    <string name="send">Send</string>
+    <string name="receive">Receive</string>
+    <string name="public_address">Public Address</string>
+
+    <string name="welcome_page_header_first_line">Keep your coins</string>
+    <string name="welcome_page_header_second_line">safe &amp; secure</string>
+    <string name="welcome">Welcome</string>
+    <string name="to">To</string>
+    <string name="get_started">Get Started</string>
+    <string name="powered">Powered By</string>
+
+    <string name="under_development">Under Development</string>
+
+    <string name="senders_address">Sender\'s Address</string>
+    <string name="transfer_funds">Transfer Funds</string>
+
+    <!-- Dashboard -->
+    <string name="hardware_wallet_title">Hardware Wallet</string>
+
+    <!-- Wallet List -->
+    <string name="select_wallet_title">Select Your Wallet</string>
+    <string name="WalletId_Data">WALLET_ID</string>
+    <string name="wallet_selection_title">Hardware Wallet</string>
+    <string name="coin_selection_title">Select Coin</string>
+    <string name="network_selection_title">Select Network</string>
+
+    <!-- Token -->
+    <!--Sending-->
+    <string name="receiver_address">Receiver"'"s Address</string>
+
+    <!-- Token Sending/Add-->
+    <string name="sender">Sender"'"s Address</string>
+    <string name="token_address">Token Address</string>
+    <string name="send_token">Send Token</string>
+    <string name="token_symbol">Symbol</string>
+    <string name="token_name">Name</string>
+    <string name="token_decimal">Decimal</string>
+    <string name="token_amount">Token Amount</string>
+    <string name="token_add_title">Add New Token</string>
+    <string name="add_token">Add Token</string>
+
+    <!-- Transfer -->
+    <string name="currency_amount">Amount</string>
+    <string name="receiver_address_subtitle">Receiver"'"s Address</string>
+    <string name="transaction_speed">Transaction Speed</string>
+    <string name="transaction_speed_slow">Slow</string>
+    <string name="transaction_speed_normal">Normal</string>
+    <string name="transaction_speed_fast">Fast</string>
+
+    <!-- Settings -->
+    <string name="coin_type">Coin Type</string>
+    <string name="networks_subtitle">Networks</string>
+    <string name="cold_wallet">Cold Wallet</string>
+    <string name="rpc_url">RPC URL</string>
+    <string name="type_rpc_url">Your RPC URL</string>
+    <string name="wallet_setup">Wallet Setup</string>
+    <string name="rpc_setup">Set RPC</string>
+
+    <!-- Dapp -->
+    <string name="url_hint">Enter website URL</string>
+
+    <!--Alert-->
+    <string name="close">Close</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="copy_to_clipboard">Copy To Clipboard</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

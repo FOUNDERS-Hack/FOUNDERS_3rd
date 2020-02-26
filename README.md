@@ -36,7 +36,7 @@ http://bethefounders.com
 
 ## Prize
 * 대상: Samsung Galaxy Note 10 + 디센터/서울경제 인터뷰
-* 최우수상: 비트코인 10만원 상당
+* 최우수상: 비트코인 10만원 상당 + 디센터/서울경제 인터뷰
 * 우수상: 이더리움 5만원 상당
 
 ## Judge
